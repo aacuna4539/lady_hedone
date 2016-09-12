@@ -7,7 +7,6 @@ export class App {
 
     configureRouter(config, router) {
         config.options.pushState = true;
-
         config.options.root = '/';
         config.title = "Lady Hedone";
 
@@ -20,5 +19,4 @@ export class App {
         this.router = router;
         console.log("nav:", this.router.navigation);
     }
-
 }
