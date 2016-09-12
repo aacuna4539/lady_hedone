@@ -1,0 +1,14 @@
+<template>
+    <header class="codrops-header">
+        <div class="codrops-links">
+            <a class="codrops-icon codrops-icon--prev" ><span>Previous Demo</span></a>
+            <a class="codrops-icon codrops-icon--drop"><span>Back to the Codrops article</span></a>
+        </div>
+        <h1 class="codrops-title">Lady <span style="color:tomato; font-weight: 100;">|</span> Hedone</h1>
+        <nav class="menu">
+            <a repeat.for="route of router.navigation" class="${ route.isActive ? 'menu__item menu__item--current' : 'menu__item' }" href.bind="route.href"><span>${route.title}</span></a>
+            <!--<a class="menu__item" href="#"><span>About</span></a>-->
+            <!--<a class="menu__item" href="#"><span>Contact</span></a>-->
+        </nav>
+    </header>
+</template>
