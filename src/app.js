@@ -17,6 +17,5 @@ export class App {
         ]);
 
         this.router = router;
-        console.log("nav:", this.router.navigation);
     }
 }

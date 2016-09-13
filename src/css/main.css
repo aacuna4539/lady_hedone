@@ -86,7 +86,7 @@ button:focus {
 }
 
 /* Header */
-.codrops-header {
+.selfheader {
 	padding: 1em 0;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -98,17 +98,17 @@ button:focus {
 	position: relative;
 }
 
-.codrops-header h1 {
+.selfheader h1 {
 	font-size: 1em;
 	margin: 0 auto 0 0;
 	padding: 0.5em;
 }
 
-.codrops-header h1 span {
+.selfheader h1 span {
 	color: #585558;
 }
 
-.codrops-links {
+.selflinks {
 	position: relative;
 	display: inline-block;
 	white-space: nowrap;
@@ -119,7 +119,7 @@ button:focus {
 	flex: none;
 }
 
-.codrops-links::after {
+.selflinks::after {
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -132,14 +132,14 @@ button:focus {
 	transform: rotate3d(0, 0, 1, 22.5deg);
 }
 
-.codrops-icon {
+.selficon {
 	display: inline-block;
 	margin: 0.5em;
 	width: 1.5em;
 	text-decoration: none;
 }
 
-.codrops-icon:before {
+.selficon:before {
 	margin: 0 5px;
 	text-transform: none;
 	font-weight: normal;
@@ -151,15 +151,15 @@ button:focus {
 	-webkit-font-smoothing: antialiased;
 }
 
-.codrops-icon span {
+.selficon span {
 	display: none;
 }
 
-.codrops-icon--drop:before {
+.selficon--drop:before {
 	content: "\e001";
 }
 
-.codrops-icon--prev:before {
+.selficon--prev:before {
 	content: "\e004";
 }
 
@@ -754,14 +754,14 @@ button:focus {
 	.menu__item span {
 		display: none;
 	}
-	.codrops-header {
+	.selfheader {
 		padding: 0.5em 0;
 	}
 	.stack.stack-prev .stack-title::after, 
 	.stack.stack-next .stack-title::after {
 		top: 1.85em;
 	}
-	.codrops-header h1 {
+	.selfheader h1 {
 		font-size: 0.85em;
 		padding: 0.25em;
 	}
@@ -774,3 +774,12 @@ button:focus {
 		transform: translate3d(0, 40vh, 0);
 	}
 }
+
+div.about-container .row div {
+	border: 2px solid yellow;
+}
+
+.wow {
+
+}
+

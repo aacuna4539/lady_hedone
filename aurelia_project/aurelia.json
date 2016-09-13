@@ -87,7 +87,6 @@
         "dependencies": [
           "jquery",
           "smoothscroll",
-
           {
             "name": "fetch",
             "path": "../node_modules/whatwg-fetch",
@@ -111,10 +110,12 @@
             "main": "dist/flickity.pkgd.min",
             "resources": ["css/flickity.css"]
           },
+
           {
-           "name": "Modernizr",
-            "path": "../node_modules/modernizr/lin",
-            "main": "lib/cli"
+            "name": "wow",
+            "path": "../node_modules/wow.js",
+            "main": "dist/wow",
+            "resources": ["css/libs/animate.css"]
           }
         ]
       },
@@ -123,6 +124,7 @@
         "prepend": [
           "node_modules/bluebird/js/browser/bluebird.core.js",
           "node_modules/whatwg-fetch/fetch.js",
+          "node_modules/wow.js/dist/wow.js",
           "scripts/require.js"
         ],
         "dependencies": [
@@ -167,6 +169,13 @@
             "path": "../node_modules/aurelia-testing/dist/amd",
             "main": "aurelia-testing",
             "env": "dev"
+          },          {
+            "name": "nprogress",
+            "path": "../node_modules/nprogress",
+            "main": "nprogress",
+            "resources": [
+              "nprogress.css"
+            ]
           }
         ]
       }

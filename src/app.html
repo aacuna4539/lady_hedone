@@ -1,14 +1,16 @@
 <template>
     <require from="css/normalize.css"></require>
     <require from="flickity/css/flickity.css"></require>
+    <require from="bootstrap/css/bootstrap.css"></require>
     <require from="css/main.css"></require>
     <require from="common/hero.html"></require>
     <require from="common/header-nav"></require>
 
-    <div class="container">
+    <loading-indicator loading.bind="router.isNavigating || api.isRequesting"></loading-indicator>
+
+    <div>
         <hero></hero>
         <header-nav router.bind="router"></header-nav>
         <router-view></router-view>
-        <img class="loader" src="/src/img/three-dots.svg" width="60" alt="Loader image" />
     </div>
 </template>
