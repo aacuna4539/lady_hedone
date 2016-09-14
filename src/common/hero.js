@@ -1,16 +1,18 @@
 /**
- * Created by rigel on 9/10/16.
+ * Created by rigel on 9/13/16.
  */
-import {bindable} from 'aurelia-framework';
-import {Router} from 'aurelia-router';
+import { inject, bindable } from 'aurelia-framework'
+import { Router } from 'aurelia-router';
 
 
-export class HeaderNav {
-    @bindable router;
+export class Hero {
 
+    constructor() {
 
-    created(view /* ref to containing view */) {
-        
+    }
+
+    created(owningView, view ) {
+
     }
 
     bind(bindingContext /* parent vm */, overrideContext) {
@@ -31,6 +33,3 @@ export class HeaderNav {
     }
 
 }
-
-
-

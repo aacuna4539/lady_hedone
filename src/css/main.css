@@ -190,7 +190,7 @@ button:focus {
 }
 
 .hero > div {
-	background: #212121 url("src/img/bg2.jpg") no-repeat 50% 0;
+	background: #212121 no-repeat 50% 0;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
@@ -776,7 +776,7 @@ button:focus {
 }
 
 div.about-container .row div {
-	border: 2px solid yellow;
+
 }
 
 .wow {
