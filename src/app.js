@@ -2,7 +2,7 @@ import {inject} from 'aurelia-framework';
 
 export class App {
     constructor() {
-
+        
     }
 
     configureRouter(config, router) {
