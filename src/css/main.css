@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400|Roboto);
 /* Fonts & icons */
 @font-face {
 	font-weight: normal;
@@ -41,6 +41,7 @@
 /* General styles */
 body {
 	background: #212121;
+	min-height: 100vh;
 	color: #fff;
 	font-size: 1em;
 	overflow: hidden;
@@ -783,3 +784,28 @@ div.about-container .row div {
 
 }
 
+div.about-content-container {
+	background: rgba(0,0,0, .6);
+	padding: 2rem;
+	border-radius: 4px;
+}
+
+landing {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #212121 url('src/img/landing_page_img.jpg') no-repeat 0;
+	background-size: cover;
+
+
+	background-color: black;
+	opacity: 0.5;
+
+	filter: blur(10px);
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+}

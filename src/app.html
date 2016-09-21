@@ -3,12 +3,14 @@
     <require from="flickity/css/flickity.css"></require>
     <require from="bootstrap/css/bootstrap.css"></require>
     <require from="css/main.css"></require>
-    <require from="common/header-nav"></require>
-    <require from="common/hero"></require>
+    <require from="resources/elements/header-nav"></require>
+    <require from="resources/elements/hero"></require>
+    <require from="resources/elements/landing"></require>
 
     <loading-indicator loading.bind="router.isNavigating || api.isRequesting"></loading-indicator>
+    <landing></landing>
 
-    <div>
+    <div if.bind="router.currentInstruction.fragment !== '/'">
         <hero></hero>
         <header-nav router.bind="router"></header-nav>
         <router-view></router-view>

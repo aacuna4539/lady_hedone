@@ -26,6 +26,11 @@ export class About {
         this.taskQueue = taskQueue;
     }
 
+    created(v1, v2){
+        console.log(v1, v2)
+    }
+
+
     attached() {
         this.taskQueue.queueMicroTask(() => {
             this.wow.init(); // much init
